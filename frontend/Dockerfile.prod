@@ -1,0 +1,30 @@
+FROM node:16.15-alpine3.14 as builder
+
+
+ENV PATH /home/app/node_modules/.bin:$PATH
+WORKDIR /home/app/frontend
+# COPY package*.json /usr/src/app/frontend/
+
+COPY ./package.json .
+COPY ./package-lock.json .
+
+RUN npm install
+RUN npm install react-scripts 
+
+COPY src ./src
+COPY public ./public
+
+# production build to serve through nginx
+RUN npm run build
+
+# start app
+FROM nginx:stable-alpine
+
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx-prod.conf /etc/nginx/conf.d
+COPY --from=builder /home/app/frontend/build /usr/share/nginx/html
+
+# EXPOSE 3000   
+
+# CMD ["nginx", "-g", "daemon off;"]
+
