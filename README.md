@@ -1,19 +1,29 @@
-# Getting Started with Create React App
+# Digit-Recognizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Handwriting digits recognizer application built on Flask and React
 
-## Available Scripts
+## Running
 
-In the project directory, you can run:
+To run the application on your machine:
 
-### `npm start`
+1. Clone repo:
+### `git clone https://github.com/Kushnaryov/Digit-recognizer.git`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. Running application:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2.1. Development mode.\
+### `make build-dev && make run-dev`
 
+2.2. Production mode.\
+### `make build-prod && make run-prod`
+
+
+
+
+
+
+
+..............................
 ### `npm test`
 
 Launches the test runner in the interactive watch mode.\
