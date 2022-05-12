@@ -10,12 +10,16 @@ Clone repo:
 `git clone https://github.com/Kushnaryov/Digit-recognizer.git`
 
 Run development mode:
-#### `make build-dev && make run-dev`
+`make build-dev && make run-dev`
 
 Run production mode
-##### `make build-prod && make run-prod`
+`make build-prod && make run-prod`
 
+## Application usage description
+Draw with mouse digit from 0 to 9. The rest will do code.
 
+Short demonstration:
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
 
