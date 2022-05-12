@@ -19,6 +19,7 @@ Run production mode
 Draw with mouse digit from 0 to 9. The rest will do code.
 
 Short demonstration:
+
 ![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
 
 
