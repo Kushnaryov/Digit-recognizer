@@ -2,20 +2,18 @@
 
 Handwriting digits recognizer application built on Flask and React
 
-## Running
+## Running application
 
 To run the application on your machine:
 
-1. Clone repo:
-### `git clone https://github.com/Kushnaryov/Digit-recognizer.git`
+Clone repo:
+`git clone https://github.com/Kushnaryov/Digit-recognizer.git`
 
-2. Running application:
+Run development mode:
+#### `make build-dev && make run-dev`
 
-2.1. Development mode.\
-### `make build-dev && make run-dev`
-
-2.2. Production mode.\
-### `make build-prod && make run-prod`
+Run production mode
+##### `make build-prod && make run-prod`
 
 
 
